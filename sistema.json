@@ -1,0 +1,20 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "gabriel",
+            "dinheiro": 333
+        },
+        {
+            "id": 2,
+            "nome": "pedro",
+            "dinheiro": -500
+        },
+        {
+            "id": 3,
+            "nome": "moraes",
+            "dinheiro": 334
+        }
+    ],
+    "last_id": 3
+}
