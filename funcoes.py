@@ -79,5 +79,10 @@ def buscar_nome(nome):
     usuarios_nome = [usuario for usuario in arquivo["usuarios"] if usuario["nome"].lower() == nome.lower()]
     return usuarios_nome if usuarios_nome else "nenhum usuario com este nome foi encontrado"
 
-
-
+def buscar_por_saldo(dinheiro):
+    arquivo = carregar_json()
+    buscar_saldo = [
+        usuario for usuario in arquivo["usuarios"]
+        if usuario["dinheiro"] == dinheiro
+    ]
+    return buscar_saldo if buscar_saldo else "nenhum usuario com este saldo foi encontrado"
